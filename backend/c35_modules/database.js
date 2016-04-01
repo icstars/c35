@@ -1,9 +1,7 @@
 "use strict";
 
-var config = require('./../config');
-
 var pg = require('pg');
-var conString = config.DATABASE_CONNECTION_URL;
+var conString = process.env.DATABASE_URL;
 
 module.exports = function() {
   return {
